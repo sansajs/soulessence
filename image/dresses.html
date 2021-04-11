@@ -1,0 +1,101 @@
+<DOCTYPE! html>
+<html>
+	<head>
+    <title>Dresses</title>
+    
+    <link rel ="stylesheet"href="style.css">
+    <script src="https://kit.fontawesome.com/0d1902fdef.js"></script>
+    </head>
+    <body>
+    	<div class ="header">
+    		<div class ="offer">
+    			<h4>FREE SHIPPING ON ORDERS RS 5000+</h4>
+    		</div>	
+    	</div>
+    	<div class ="logo">
+    		<div class= "middle">
+    			<a href="soulessence.html" style="text-decoration: none">
+    			<h4> SOUL ESSENCE </h4>
+    			</a>
+    		</div>
+
+    		<div class = "searchbox">
+    			<input class= "searchtxt" type="text" name="" placeholder="Type to search">
+    			<a class ="searchbtn" href="#">
+    		<i class="fas fa-search"></i>
+    			</a>	
+    		</div>
+    		<a class="cart" href="#">
+    		<i class="fas fa-shopping-cart">mycart</i>	
+    		</a>
+    		<a class="contact" href="#" onclick="openPopupMenu()">
+    		<i class="fas fa-tty">contactus</i>
+    		</a>	
+    	</div>
+
+    	<nav class = "navigationbar">
+			<a href = "NewArrivals.html" class="navigation">New Arrivals</a>
+			<a href = "dresses.html" class="currentbutton">Dresses</a>
+			<a href = "shoes.html" class= "navigation">Shoes</a>
+			<a href = "Blog.html" class="navigation">Blog</a>
+			<a href = "Research.html" class="navigation">Research</a>
+		</nav>
+		<div id="popup_bg">
+			<div id="popup_main_div">
+				<p class="contactus" >
+					CONTACT US
+				</p>
+				<p class="hear">
+					We'd <3 to hear from you!
+				</p>
+		<div class="wrapper">
+			<form name="messageForm" onsubmit="validateForm()">
+				<div class="class">
+				<p><input type="text" name="name" placeholder="Name" class="input"></p>
+				<p ><input type="text" name="email" placeholder="Email Address"class="input" ></p>
+				<p ><textarea name="message"rows="10" cols="30" placeholder="Enter your Message" class="input"></textarea></p>
+				<p ><input type="submit" value="Send" class="input"></p>
+			</div>
+			</form>
+		</div>
+			<div class="right_column">
+				<div class="container">
+				<p class="title">GET IN TOUCH!</p>
+				<p class="phone">Phone:(+977) 9861333383</p>
+				<p class="phone">Address: Kamalpokhari, Kathmandu</p>
+				<p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.277966575678!2d85.3237989150621!3d27.70870268279129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington+College!5e0!3m2!1sen!2snp!4v1566354505972!5m2!1sen!2snp" width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+			</div>
+			</div>
+				<div id ="close_popup_div" onclick="closePopupMenu()">
+				<p>
+					X
+				</p>	
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var popupDiv = document.getElementById
+			("popup_bg");
+			function openPopupMenu(){
+				popupDiv.style.display ="block";
+			}
+			function closePopupMenu(){
+				popupDiv.style.display ="none";
+			}
+			function validateForm(){
+				var name = document.forms["messageForm"]["name"].value;
+				var emad = document.forms["messageForm"]["email"].value;
+				var msg = document.forms["messageForm"]["message"].value;
+				if(name==""|| emad==""|| msg==""){
+					alert("Empty!!");
+				}
+				else{
+					alert("Thank you");
+				}
+			}
+		</script>
+		
+
+    	</body>
+	 
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Red Dress</title>
+
+	<link rel="stylesheet" href="../CSS/style.css">
+	<style type="text/css">
+		.columnr {
+			padding-left: 5px;
+		}
+
+		.Arrivals {
+			height: 380px;
+			width: 300px;
+		}
+
+		.select {
+			width: 25%;
+			padding-bottom: 5px;
+			border: 0px;
+			background: white;
+			border: 1px solid lightgray;
+			padding: 5px 1px;
+			font-size: 1em;
+			color: black;
+			font-family: "Calibri light";
+			font-size: 15px;
+
+		}
+
+		.sqtn {
+			width: 25%;
+			display: block;
+			padding-bottom: 5px;
+			border: 0;
+			background: white;
+			border: 1px solid lightgray;
+			padding: 5px 1px;
+			font-size: 1em;
+			color: black;
+		}
+
+		.leftdetails {
+			padding-left: 290px;
+			font-family: "Calibri";
+			font-weight: lighter;
+			font-size: 20px;
+		}
+
+		.rightdetails {
+			float:left;
+			width: 100%;
+			font-size: 17px;
+			font-family: "Calibri light";
+		}
+
+		.star {
+			color: #d4af37;
+		}
+
+		.button {
+			background-color: black;
+			color: white;
+			width: 110px;
+			height: 50px;
+			border: black;
+			font-size: 15px;
+			font-family: "Calibri light";
+		}
+
+		.selectstar {
+			width: 70%;
+			display: block;
+			height: 30px;
+			border: 1px solid lightgray;
+		}
+
+		.reviewr {
+			cursor: pointer;
+
+		}
+
+		#popupr {
+			position: fixed;
+			left: 0;
+			top: 0;
+			background-color: rgba(0, 0, 0, 0.7);
+			width: 100%;
+			height: 100%;
+			display: none;
+		}
+
+		#popup_main_divr {
+			position: fixed;
+			background: white;
+			width: 800px;
+			height: 500px;
+			border: 2px solid black;
+			border-radius: 5px;
+			left: 50%;
+			margin-left: -400px;
+			top: 50%;
+			margin-top: -250px;
+		}
+
+		#close_popup_div {
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			border-radius: 25px;
+			border: 1px solid black;
+			text-align: center;
+			right: 5px;
+			top: 5px;
+			cursor: pointer;
+			margin-top: 3px;
+			font-family: Yu Gothic Light;
+			font-weight: bold;
+
+		}
+
+		.reviewpopupr {
+			left: 35%;
+			top: 50%;
+			position: fixed;
+			transform: translate(-50%, -50%);
+		}
+
+		.inputr {
+			width: 70%;
+			display: block;
+			padding-bottom: 5px;
+			border: 0;
+			background: white;
+			border: 1px solid lightgray;
+			padding: 5px 1px;
+			font-size: 1em;
+			color: black;
+		}
+
+		.send {
+			width: 70%;
+			display: block;
+			padding-bottom: 5px;
+			border: 0;
+			color: white;
+			font-size: 15px;
+			background: black;
+			border: 1px solid black;
+			height: 50px;
+
+		}
+
+		.dressreview {
+			left: 160%;
+			top: 50%;
+			position: absolute;
+			transform: translate(-50%, -50%);
+		}
+
+		.Arrivalr {
+			width: 280px;
+			height: 370px;
+
+		}
+	</style>
+	<meta name="description" content="Webpae html"/>
+	<meta name="keywords" content="HTML,CSS,Javascript">
+	<meta name="author" content="Prashansa Joshi">
+	<script src="https://kit.fontawesome.com/0d1902fdef.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="offer">
+			<h4>FREE SHIPPING ON ORDERS RS 5000+</h4>
+		</div>
+	</div>
+	<div class="logo">
+		<div class="middle">
+			<a href="../index.html" style="text-decoration: none">
+				<h4> SOUL ESSENCE </h4>
+			</a>
+		</div>
+
+		<div class="searchbox">
+			<input class="searchtxt" type="text" name="" placeholder="Type to search">
+			<a class="searchbtn" href="#">
+				<i class="fas fa-search"></i>
+			</a>
+		</div>
+		<a class="cart" href="#">
+			<i class="fas fa-shopping-cart">mycart</i>
+		</a>
+		<a class="contact" href="#" onclick="openPopupMenu()">
+			<i class="fas fa-tty">contactus</i>
+		</a>
+	</div>
+
+	<nav class="navigationbar">
+		<a href="../Pages/NewArrivals.html" class="navigation">New Arrivals</a>
+		<a href="../Pages/dresses.html" class="navigation">Dresses</a>
+		<a href="../Pages/shoes.html" class="navigation">Shoes</a>
+		<a href="../Pages/Blog.html" class="navigation">Blog</a>
+		<a href="../Pages/Research.html" class="navigation">Research</a>
+	</nav>
+	<div id="popup_bg">
+		<div id="popup_main_div">
+			<p class="contactus">
+				CONTACT US
+			</p>
+			<p class="hear">
+				We'd &lt;3 to hear from you! </p>
+			<div class="wrapper">
+				<form name="messageForm" onsubmit="validateForm()">
+					<div class="class">
+						<p><input type="text" name="name" placeholder="Name" class="input"></p>
+						<p><input type="text" name="email" placeholder="Email Address" class="input"></p>
+						<p><textarea name="message" rows="10" cols="30" placeholder="Enter your Message"
+								class="input"></textarea></p>
+						<p><input type="submit" value="Send" class="input"></p>
+					</div>
+				</form>
+			</div>
+			<div class="right_column">
+				<div class="container">
+					<p class="title">GET IN TOUCH!</p>
+					<p class="phone">Phone:(+977) 9861333383</p>
+					<p class="phone">Address: Kamalpokhari, Kathmandu</p>
+					<p class="map"><iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.277966575678!2d85.3237989150621!3d27.70870268279129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington+College!5e0!3m2!1sen!2snp!4v1566354505972!5m2!1sen!2snp"
+							width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<div id="close_popup_div" onclick="closePopupMenu()">
+				<p>
+					X
+				</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr color="#F8DBBF" size="0.1px" />
+	<section style="margin-right:5px; margin-left:220px;">
+		<table>
+			<tr>
+				<td class="columnr">
+					<figure>
+						<img src="../image/reddress1.jpg" class="Arrivals" alt="Red Dress">
+					</figure>
+
+				</td>
+				<td class="columnr">
+					<figure>
+						<img src="../image/reddress2.jpg" class="Arrivals" alt="Green Dress">
+					</figure>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<div class="leftdetails">
+		<h3> Women's Frill Dress</h3>
+		<a class="star">
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star"></i>
+			<i class="fas fa-star-half-alt"></i>
+		</a>
+		<i onclick="openPopupMenur()" class="reviewr">(Write a review)</i>
+		<br>
+
+		<article class="rightdetails">
+			<b>Rs.2500</b>
+			<p>Product details:<br>
+				Women's Sleeveless Dress With Half Frill Down Design</p>
+			<p>Composition:<br>
+				100% Cotton</p>
+			<p>Care:<br>
+				Hand Wash, Do Not Bleach, Low Iron, Do Not Dry Clean.</p>
+		</article>
+		<div id="popupr">
+			<div id="popup_main_divr">
+				<p style="text-align: center;">
+
+					WRITE A REVIEW
+
+				</p>
+				
+				<div class="reviewpopupr">
+					<form name="messageForm" onsubmit="validateForm()">
+						<div class="reviewformr">
+							<p>Rating:<br>
+								<select class="selectstar">
+									<option value="1star">1 star(worst)</option>
+									<option value="2star">2 star </option>
+									<option value="3star">3 star(average)</option>
+									<option value="4star">4 star </option>
+									<option value="5star">5 star(best) </option>
+								</select></p>
+
+							<p>Name:<br><input type="text" name="name" class="inputr"></p>
+							<p>Comments:<br><textarea name="message" rows="7" cols="30" class="inputr"></textarea></p>
+							<p><input type="submit" value="Send" class="send"></p>
+						</div>
+					</form>
+					<div class="dressreview">
+						<figure>
+							<img src="../image/reddress1.jpg" class="Arrivalr" alt="Red Dress">
+						</figure>
+					</div>
+				</div>
+				<div id="close_popup_div" onclick="closePopupMenur()">
+					<p>
+						X
+					</p>
+				</div>
+			</div>
+		</div>
+	
+
+		<form>
+			<p>Size:</p>
+				 <label class="radio-inline">
+      <input type="radio" name="optradio" checked>Small
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Medium
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Large
+    </label>
+			<p>Color:</p>
+			<select class="select">
+				<option value="Red">Red</option>
+				<option value="Green">Green </option>
+				<option value="Green">Yellow </option>
+				<option value="Green">Blue </option>
+			</select>
+
+			<p>Quantity:</p>
+			<p><input type="number" name="quantity" min="1" max="100" class="sqtn"></p>
+			<button type="button" onclick="alert('Added to the cart')" class="button">Add to cart</button>
+		</form>
+		<br>
+		<div>
+			<a href="NewArrivals.html">
+				<button style="margin-left:300px; font-size:15px;" class="button">Back to New Arrivals</button>
+			</a>
+		</div>
+
+
+
+		<script type="text/javascript">
+			var popupDiv = document.getElementById
+				("popup_bg");
+			function openPopupMenu() {
+				popupDiv.style.display = "block";
+			}
+			function closePopupMenu() {
+				popupDiv.style.display = "none";
+			}
+			function validateForm() {
+				var name = document.forms["messageForm"]["name"].value;
+				var emad = document.forms["messageForm"]["email"].value;
+				var msg = document.forms["messageForm"]["message"].value;
+				if (name == "" || emad == "" || msg == "") {
+					alert("Empty!!");
+				}
+				else {
+					alert("Thank you");
+				}
+			}
+			var popupr = document.getElementById
+				("popupr");
+			function openPopupMenur() {
+				popupr.style.display = "block";
+			}
+			function closePopupMenur() {
+				popupr.style.display = "none";
+			}
+			function validateForm() {
+				var namer = document.forms["messageForm"]["name"].value;
+				var comtr = document.forms["messageForm"]["message"].value;
+				if (name == "" || comtr == "") {
+					alert("Empty!!");
+				}
+				else {
+					alert("Thank you");
+				}
+			}
+		</script>
+
+</body>
+
+</html>

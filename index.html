@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<!--Soul Essence Header starts-->
+	<head>
+    <title>Soul Essence</title>
+    <link rel ="stylesheet"href="CSS/style.css"> <!--Using External css-->
+    <style type="text/css">/*Using Internal css*/
+    	.photo{
+    			height:400px;
+				width:60%;
+				margin: 0 auto;
+    	}
+			.images{
+				height:450px;
+				width:100%;
+				margin: 0 auto;
+			}
+			.display{
+				height:380px;
+				width:330px;
+				display: block;
+				transition:.5s ease;
+				cursor: pointer;
+				backface-visibility: hidden;
+				opacity: 1;
+			}
+			.below{
+			transition: .5s ease;
+			opacity: 0;
+			top:70%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			position: absolute;
+			cursor: pointer;
+			}
+			.column1{
+				position: relative;
+			}
+	
+			.column1:hover .display{
+ 		 	opacity:0.5;
+ 			}
+		
+			.column1:hover .below{
+			opacity:1;
+			
+			}
+			.text{
+			background-color:pink;
+ 			color: white;
+  			font-size: 16px;
+  			padding: 16px 32px;
+		}
+		.footer{
+		   width: 100%;
+		   position:relative;
+		   height:50%;
+		   margin-top: 50px;
+		   color:"pink";
+		   
+		}
+		.leftf{
+			margin-top:20px;
+			padding-left:100px;
+
+		}
+		.middlef{
+			margin-top:-120px;
+			padding-left:500px;
+		}
+		.rightf{
+			margin-top:-180px;
+			padding-left:900px;
+		}
+		.btn{
+			
+			width:50px;
+			height:50px;
+			background:pink;
+			margin:10px;
+			border-radius:40%;
+			padding-top:10px;
+			color:white;
+			line-height:10px;
+			font-size:25px;
+			transition: 0.2s linear;
+			text-align:center;
+		}
+
+	.btn:hover{
+			transform: scale(1.3);
+		}
+			</style>
+		<!--Internal css ends-->
+		<meta name="description" content="Webpae html"/>
+	<meta name="keywords" content="HTML,CSS,Javascript">
+	<meta name="author" content="Prashansa Joshi">
+    <script src="https://kit.fontawesome.com/0d1902fdef.js"></script>
+    </head>
+    <!---Soul Essence Header Ends-->
+    <!--body of Soul Essence starts-->
+    <body>
+    	<div class ="header">
+    		<div class ="offer">
+    			<h4>FREE SHIPPING ON ORDERS RS 5000+</h4>
+    		</div>	
+    	</div>
+    	<div class ="logo">
+    		<div class= "middle">
+    			<a href="index.html" style="text-decoration: none">
+    			<h4> SOUL ESSENCE </h4>
+    			</a>
+    		</div>
+
+    		<div class = "searchbox">
+    			<input class= "searchtxt" type="text" name="" placeholder="Type to search">
+    			<a class ="searchbtn" href="#">
+    		<i class="fas fa-search"></i>
+    			</a>	
+    		</div>
+    		<a class="cart" href="#">
+    		<i class="fas fa-shopping-cart">mycart</i>	
+    		</a>
+    		<a class="contact" href="#" onclick="openPopupMenu()">
+    		<i class="fas fa-tty">contactus</i>
+    		</a>	
+    	</div>
+<!--navigation starts-->
+    	<nav class = "navigationbar">
+			<a href = "Pages/NewArrivals.html" class="navigation">New Arrivals</a>
+			<a href = "Pages/dresses.html" class="navigation">Dresses</a>
+			<a href = "Pages/shoes.html" class= "navigation">Shoes</a>
+			<a href = "Pages/Blog.html" class="navigation">Blog</a>
+			<a href = "Pages/Research.html" class="navigation">Research</a>
+		</nav><!--navigation ends-->
+		<center>
+			<figure><img src="image/s3.jpg" class="photo"></figure>
+		</center>
+		
+		
+	<div>
+		<img src="image/ss1.jpg" class="images">
+		<img src="image/ss2.jpg" class="images">
+
+	</div>
+	<section style="margin-top:50px; margin-left:10px; margin-right:10px;">
+	<table>
+		<tr>
+			<td class="column1">
+				<figure>
+					<img src="image/d1.jpg" class="display">
+					<a href="Pages/NewArrivals.html" style="text-decoration: none">
+							<div class="below">
+  							<div class="text">New Arrivals
+  							</div>
+  							</div>
+				</figure>
+			</td>
+			<td class="column1">
+				<figure>
+					<img src="image/ddress.jpg" class="display">
+					<a href="Pages/dresses.html" style="text-decoration: none">
+							<div class="below">
+  							<div class="text">Dresses
+  							</div>
+  							</div>
+				</figure>
+			</td>
+			<td>
+				<figure class="column1">
+					<img src="image/dshoes.jpg" class="display">
+					<a href="Pages/shoes.html" style="text-decoration: none">
+							<div class="below">
+  							<div class="text">Shoes
+  							</div>
+  							</div>
+				</figure>
+			</td>
+		</tr>
+	</table>
+</section>
+<!--popup for contactus starts-->
+		<div id="popup_bg">
+			<div id="popup_main_div">
+				<p class="contactus" >
+					CONTACT US
+				</p>
+				<p class="hear">
+					We'd &lt;3 to hear from you!
+				</p>
+		<div class="wrapper">
+			<form name="messageForm" onsubmit="validateForm()">
+				<div class="class">
+				<p><input type="text" name="name" placeholder="Name" class="input"></p>
+				<p ><input type="text" name="email" placeholder="Email Address"class="input" ></p>
+				<p ><textarea name="message"rows="10" cols="30" placeholder="Enter your Message" class="input"></textarea></p>
+				<p ><input type="submit" value="Send" class="input"></p>
+			</div>
+			</form>
+		</div>
+			<div class="right_column">
+				<div class="container">
+				<p class="title">GET IN TOUCH!</p>
+				<p class="phone">Phone:(+977) 9861333383</p>
+				<p class="phone">Address: Kamalpokhari, Kathmandu</p>
+				<p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.277966575678!2d85.3237989150621!3d27.70870268279129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington+College!5e0!3m2!1sen!2snp!4v1566354505972!5m2!1sen!2snp" width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+			</div>
+			</div>
+				<div id ="close_popup_div" onclick="closePopupMenu()">
+				<p>
+					X
+				</p>	
+				</div>
+			</div>
+		</div>
+		<!--popup for contactus ends-->
+		<script type="text/javascript">
+			var popupDiv = document.getElementById
+			("popup_bg");
+			function openPopupMenu(){
+				popupDiv.style.display ="block";
+			}
+			function closePopupMenu(){
+				popupDiv.style.display ="none";
+			}
+			function validateForm(){
+				var name = document.forms["messageForm"]["name"].value;
+				var emad = document.forms["messageForm"]["email"].value;
+				var msg = document.forms["messageForm"]["message"].value;
+				if(name==""|| emad==""|| msg==""){
+					alert("Empty!!");
+				}
+				else{
+					alert("Thank you for your feedback :)");
+				}
+			}
+//Javascript for carousel starts
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic,2000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+
+		
+	</script>
+
+<!--footer starts-->
+	<div class="footer">
+
+	<hr color="#F8DBBF" size="25px"/>
+
+		
+		<footerstyle style="margin-left:60px;">
+		<div class="leftf">
+			<p style="font-size:20px; font-family: calibri light;font-weight: bold;">FIND US</p>
+			<p style="font-size:18px; font-family: calibri light;text-decoration: none">Phone:9861333383</p>
+			<p style="font-size:18px; font-family: calibri light;">Address:Kamalpokhari,Lalitpur</p>
+		</div>
+		<div class="middlef">
+			<p style="font-size:20px; font-family: calibri light;font-weight: bold;">ABOUT</p>
+			<a href = "NewArrivals.html" class="navf" style="text-decoration: none; font-size:18px; font-family: calibri light;color: black">New Arrivals</a><br>
+			<a href = "dresses.html" class="navf" style="text-decoration: none;font-size:18px; font-family: calibri light;color:black">Dresses</a><br>
+			<a href = "shoes.html" class="navf" style="text-decoration: none;font-size:18px; font-family: calibri light;color:black">Shoes</a><br>
+			<a href = "blog.html" class="navf" style="text-decoration: none;font-size:18px; font-family: calibri light;color:black">Blog</a><br>
+			<a href = "Research.html" class="navf" style="text-decoration: none;font-size:18px; font-family: calibri light;color:black">Research<br></a>
+
+		</div>
+
+		<div class="rightf">
+			<p style="font-size:20px; font-family: calibri light;font-weight: bold; text-decoration: none;">#SOULESSENCE<p>
+				<a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.facebook.com/" style="text-decoration: none">
+				<a class="btn" href=""><i class="fab fa-instagram"></i></a>
+		</div>
+		<br>
+		<center>
+		<p style="padding-top: 40px; font-size:20px;">&copy;SoulEssenceNepal, 2019</p>
+		</center>	
+	</footer>
+	<!--footer ends-->
+		</div>
+	<!--body tag ends-->
+    	</body>
+	 
+</html>

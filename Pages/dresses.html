@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<!--heaad of dresses starts-->
+	<head>
+    <title>Dresses</title>
+ <!--using external css-->
+    <link rel ="stylesheet"href="../CSS/style.css">
+   	<style type = "text/css">/*using internal css*/
+    .newarrival{
+    		color: black;
+    		text-align: left;
+    		background-size: 100px 200px;
+			width: 100%;
+			height:350px;
+			background-image: url("../image/Capture2.jpg");
+			background-size: cover;
+    	}
+    	.trend{
+    		font-size: 25px;
+    		font-family: Playfair Display;
+    	}
+    	.feature{
+    		font-size:25px;
+    		font-family: "Calibri Light";
+    		padding-left:75px;
+    		padding-top:350px;
+    	}
+    	.feature1{
+    		font-size:25px;
+    		font-family: "Calibri Light";
+    		padding-left:75px;
+    	}
+    	.column{
+		margin-right:20px;
+		position: relative;
+		width:50%;
+
+		}
+		.Arrivals{
+		height: 380px;
+		width: 290px;
+		display: block;
+		transition:.5s ease;
+		cursor: pointer;
+		backface-visibility: hidden;
+		opacity: 1;
+		}
+
+		.fig1{
+			font-family: "Calibri light";
+			font-size: 15px;
+			color: black;
+		}
+		.fig2{
+			font-size:18px;
+			font-family: "Calibri light";
+			font-weight: bolder;
+			color: black;
+		}
+		.fig3{
+			font-size:18px;
+			font-family: "Calibri light";
+			color:red;
+
+		}
+		.below{
+			transition: .5s ease;
+			opacity: 0;
+			top:70%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			
+			position: absolute;
+			cursor: pointer;
+		}
+		.column:hover .Arrivals {
+ 		 opacity:0.7;
+ 		}
+		
+		.column:hover .below{
+			opacity:1;
+			
+		}
+		.text{
+			background-color:pink;
+ 			color: white;
+  			font-size: 16px;
+  			padding: 16px 32px;
+		}
+	</style>
+	<meta name="description" content="Webpae html"/>
+	<meta name="keywords" content="HTML,CSS,Javascript">
+	<meta name="author" content="Prashansa Joshi">
+	<!--internal css ends-->
+	<!--importing icons-->
+    <script src="https://kit.fontawesome.com/0d1902fdef.js"></script>
+    </head>
+    <!--head of dresses ends-->
+    <!--body of the dresses starts-->
+    <body>
+    	<div class ="header">
+    		<div class ="offer">
+    			<h4>FREE SHIPPING ON ORDERS RS 5000+</h4>
+    		</div>	
+    	</div>
+    	<div class ="logo">
+    		<div class= "middle">
+    			<a href="../index.html" style="text-decoration: none">
+    			<h4> SOUL ESSENCE </h4>
+    			</a>
+    		</div>
+
+    		<div class = "searchbox">
+    			<input class= "searchtxt" type="text" name="" placeholder="Type to search">
+    			<a class ="searchbtn" href="#">
+    		<i class="fas fa-search"></i>
+    			</a>	
+    		</div>
+    		<a class="cart" href="#">
+    		<i class="fas fa-shopping-cart">mycart</i>	
+    		</a>
+    		<a class="contact" href="#" onclick="openPopupMenu()">
+    		<i class="fas fa-tty">contactus</i>
+    		</a>	
+    	</div>
+<!--navigation of the website starts-->
+    	<nav class = "navigationbar">
+			<a href = "../Pages/NewArrivals.html" class="navigation">New Arrivals</a>
+			<a href = "../Pages/dresses.html" class="currentbutton">Dresses</a>
+			<a href = "../Pages/shoes.html" class= "navigation">Shoes</a>
+			<a href = "../Pages/Blog.html" class="navigation">Blog</a>
+			<a href = "../Pages/Research.html" class="navigation">Research</a>
+		</nav>
+		<!--navigation of the website ends-->
+		<div id="popup_bg">
+			<div id="popup_main_div">
+				<p class="contactus" >
+					CONTACT US
+				</p>
+				<p class="hear">
+					We'd &gt;3 to hear from you!
+				</p>
+		<div class="wrapper">
+			<form name="messageForm" onsubmit="validateForm()">
+				<div class="class">
+				<p><input type="text" name="name" placeholder="Name" class="input"></p>
+				<p ><input type="text" name="email" placeholder="Email Address"class="input" ></p>
+				<p ><textarea name="message"rows="10" cols="30" placeholder="Enter your Message" class="input"></textarea></p>
+				<p ><input type="submit" value="Send" class="input"></p>
+			</div>
+			</form>
+		</div>
+			<div class="right_column">
+				<div class="container">
+				<p class="title">GET IN TOUCH!</p>
+				<p class="phone">Phone:(+977) 9861333383</p>
+				<p class="phone">Address: Kamalpokhari, Kathmandu</p>
+				<p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.277966575678!2d85.3237989150621!3d27.70870268279129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington+College!5e0!3m2!1sen!2snp!4v1566354505972!5m2!1sen!2snp" width="250" height="160" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+			</div>
+			</div>
+				<div id ="close_popup_div" onclick="closePopupMenu()">
+				<p>
+					X
+				</p>	
+				</div>
+			</div>
+		</div>
+		<br/>
+		<hr color="#F8DBBF" size="0.1px"/>
+		<p class="line"> Home | Women | Featured | Dresses </p>
+		<div class="newarrival">
+			<p class="Trend"></p>
+			<br>
+			<p class="feature"> DRESSES</p>
+		</div>
+		<section style="margin-top:100px; margin-left:30px; margin-right:30px;">
+			<table>
+				<tr>
+					<td class="column">
+						<figure>
+							<img src="../image/yellowdress1.jpg" class= "Arrivals" alt="Red Dress">
+							<a href="Blackfloral.html" style="text-decoration: none">
+							<div class="below">
+  							<div class="text">quick view
+  							</div>
+  							</div>
+							<figcaption class="fig1">
+								<br>
+								Floral Yellow Summer Dress
+								<br>
+							</figcaption>
+							<figcaption class="fig2">
+								Rs. 2400
+							</figcaption>
+						</figure>
+
+					</td>
+					<td class ="column">
+						<figure>
+							<img src="../image/whitefloral1.jpg" class="Arrivals" alt="Black Corduroy">
+							<a href="floralmididress.html" style="text-decoration: none">
+							<div class="below">
+  							<div class="text">quick view
+  							</div>
+  							</div>
+							<figcaption class="fig1">
+								<br>
+								White Floral Midi Dress
+								<br>
+							</figcaption>
+							<figcaption class="fig2">
+								Rs. 3800
+							</figcaption>
+						</figure>
+					</td>
+					<td class ="column">
+						<figure>
+							<img src="../image/redpolka1.jpg" class="Arrivals">
+							<a href="https://www.dotti.com.au/shop/en/dotti/dresses/all-dresses/linen-blend-krissy-strappy-wrap-skater?colour=RED%20DITSY%20FLR" style="text-decoration: none">
+							<div class="below">
+  							<div class="text">quick view
+  							</div>
+  							</div>
+							<figcaption class="fig1">
+								<br>
+								Red Mini Dress
+								<br>
+							</figcaption>
+							<figcaption class="fig2">
+								Rs. 2100
+							</figcaption>
+						</figure>	
+					</td>
+				</tr>
+			</table>			
+		</section>
+		<p class="feature1"> HAND-PICKS (HOT-OFFERS)</p>
+		<section style="margin-top:50px;margin-left:30px; margin-right:30px;">
+			<table>
+				<tr>
+					<td class="column">
+						<figure>
+							<img src="../image/whitedress1.jpg" class= "Arrivals" alt="Red Dress">
+							<div class="below">
+  							<div class="text">quick view
+  							</div>
+  							</div>
+							<figcaption class="fig1">
+								<br>
+								White A-line Button Dress
+								<br>
+							</figcaption>
+							<figcaption class="fig3">
+								<del>Rs.3000</del>
+							</figcaption>
+							<figcaption class="fig2">
+								Rs. 2500
+							</figcaption>
+						</figure>
+
+					</td>
+					<td class ="column">
+						<figure>
+							<img src="../image/floraldress1.jpg" class="Arrivals" alt="Black Corduroy">
+							<a href="https://www.dotti.com.au/shop/en/dotti/dresses/all-dresses/ruffle-wrap-skater-dress-549914-1?colour=BLACK%20PINK%20FLORAL" style="text-decoration: none">
+							<div class="below">
+  							<div class="text">quick view
+  							</div>
+  							</div>
+							<figcaption class="fig1">
+								<br>
+								Floral Quater Dress
+								<br>
+							</figcaption>
+							<figcaption class="fig3">
+								<del>Rs.4000</del>
+							</figcaption>
+							<figcaption class="fig2">
+								Rs. 3500
+							</figcaption>
+						</figure>
+					</td>
+					<td class ="column">
+						<figure>
+							<img src="../image/peachtop1.jpg" class="Arrivals">
+							<div class="below">
+  							<div class="text">quick view
+  							</div>
+  							</div>
+							<figcaption class="fig1">
+								<br>
+								Peach Front Knot Top
+								<br>
+							</figcaption>
+							<figcaption class="fig3">
+								<del>Rs.2300</del>
+							</figcaption>
+							<figcaption class="fig2">
+								Rs. 1800
+							</figcaption>
+								
+			
+						</figure>	
+					</td>
+				</tr>
+			</table>			
+		</section>
+		<script type="text/javascript">//Javascript for validation form
+			var popupDiv = document.getElementById
+			("popup_bg");
+			function openPopupMenu(){
+				popupDiv.style.display ="block";
+			}
+			function closePopupMenu(){
+				popupDiv.style.display ="none";
+			}
+			function validateForm(){
+				var name = document.forms["messageForm"]["name"].value;
+				var emad = document.forms["messageForm"]["email"].value;
+				var msg = document.forms["messageForm"]["message"].value;
+				if(name==""|| emad==""|| msg==""){
+					alert("Empty!!");
+				}
+				else{
+					alert("Thank you");
+				}
+			}
+		</script>
+		<br>
+		<br>
+		<div class="footersam">
+			<!--footer starts-->
+			<footer style="margin-left:60px; margin-right:60px;">
+			<center>
+			<p>&copy;SoulEssenceNepal,2019</p>	
+			</center>
+			
+			</footer>
+			<!--footer ends-->	
+		</div>
+
+    	</body>
+    	<!--body ends-->
+	 
+</html>
